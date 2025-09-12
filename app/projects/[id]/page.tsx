@@ -435,9 +435,11 @@ export default function ProjectDetail() {
                       }}
                     />
                     <button
+                      type="button"
                       className="btn"
                       onClick={addTask}
                       disabled={savingTask || !newTask.trim()}
+                      aria-label="Add task"
                     >
                       <Plus className="h-4 w-4" />
                     </button>
@@ -549,6 +551,7 @@ export default function ProjectDetail() {
                 min={0}
                 max={100}
                 value={inviteShare}
+                placeholder="Share %"
                 onChange={(e) =>
                   setInviteShare(
                     Number.isFinite(parseInt(e.target.value, 10))
