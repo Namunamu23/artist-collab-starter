@@ -2,9 +2,9 @@
   "compilerOptions": {
     "target": "ES2022",
     "lib": [
-      "dom",
-      "dom.iterable",
-      "es2022"
+      "DOM",
+      "DOM.Iterable",
+      "ES2022"
     ],
     "allowJs": false,
     "skipLibCheck": true,
@@ -15,11 +15,10 @@
     "moduleResolution": "Bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve",
+    "jsx": "preserve", // 👈 was "preserve"
+    // REMOVE "types" entirely OR include react + react-dom
+    // "types": ["node", "react", "react-dom"],
     "forceConsistentCasingInFileNames": true,
-    "types": [
-      "node"
-    ],
     "incremental": true,
     "plugins": [
       {
